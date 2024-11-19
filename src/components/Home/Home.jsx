@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Header from "../Header/Header";
 import LaftNavbar from "../LaftNavbar/LaftNavbar";
 import LatestNews from "../LatestNews/LatestNews";
@@ -13,7 +14,7 @@ const Home = () => {
             <Navbar></Navbar>
             <main className="py-2 grid grid-cols-12 gap-8">
                 <aside className="left col-span-3"><LaftNavbar></LaftNavbar> </aside>
-                <section className="col-span-6">middle section</section>
+                <section className="col-span-6"><Outlet></Outlet></section>
                 <aside className="col-span-3"><RightBar></RightBar></aside>
             </main>
         </div>
